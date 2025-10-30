@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معي</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        .contact-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        .contact-info {
+            text-align: right;
+            flex: 1;
+        }
+
+        .contact-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .contact-value {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .contact-item {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>تواصل معي</h1>
+        <p class="subtitle">يسعدني التواصل معك</p>
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yones11221133@gmail.com" target="_blank" class="contact-item">
+            <div class="icon">📧</div>
+            <div class="contact-info">
+                <div class="contact-label">البريد الإلكتروني</div>
+                <div class="contact-value">yones11221133@gmail.com</div>
+            </div>
+        </a>
+
+        <a href="tel:+966533588187" class="contact-item">
+            <div class="icon">📱</div>
+            <div class="contact-info">
+                <div class="contact-label">رقم الهاتف</div>
+                <div class="contact-value">0533588187</div>
+            </div>
+        </a>
+
+        <a href="https://wa.me/966533588187" target="_blank" class="contact-item">
+            <div class="icon">💬</div>
+            <div class="contact-info">
+                <div class="contact-label">واتساب</div>
+                <div class="contact-value">راسلني على الواتساب</div>
+            </div>
+        </a>
+
+        <div class="footer">
+            جاهز للرد على استفساراتك
+        </div>
+    </div>
+</body>
+</html>
